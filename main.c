@@ -22,6 +22,19 @@ else{
 }
 }
 
+//produtorioRecursivo
+long int produtoriaRecursiva(int x, int y){
+	if(y>=x){
+	//long int produto=y;
+	long int resultado = produtoriaRecursiva(x,y-1);
+	printf("%ld - ", resultado);
+	return y*resultado;
+}
+else{
+	return 1;
+	}
+}
+
 int main(void) {
 	printf("\n\n ::::: INICIO DO PROGRAMA ::::: \n\n);
 	printf("\n\nDigite o número x: ");
